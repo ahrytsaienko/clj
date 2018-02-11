@@ -24,6 +24,7 @@
 (nil? 1)
 (nil? nil)
 
+
 (if "bears eats beets"
   "bears beets Battlestar Galactica")
 
@@ -208,10 +209,11 @@
 (let [[pongo & dalmatians] dalmatian-list]
     [pongo dalmatians])
 
-
-
-
-
+;;; 4 times of fnctions
+((fn add-five [x] (+ x 5)) 3)
+((fn [x] (+ x 5)) 3)
+(#(+ % 5) 3)
+((partial + 5) 3)
 
 
 
