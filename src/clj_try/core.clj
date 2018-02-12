@@ -215,9 +215,17 @@
 (#(+ % 5) 3)
 ((partial + 5) 3)
 
+((fn hello-world [name] (str "Hello, " name)) "Artem") 
+(map #(+ % 5) '(1 2 3))
+
+(let [x 2] (+ 2 x))
+
+(apply str (re-seq #"[A-Z]+" "bA1B3Ce "))
+
+((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5)
 
 
-
+(println "Cleanlines")
 
 
 
